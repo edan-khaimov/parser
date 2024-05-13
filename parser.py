@@ -50,6 +50,8 @@ def first_event():
                             "/html/body/div[2]/div/div[2]/div/main/div/div/div/div/div[1]/div/form/button/span[1]").click()
         driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div[1]/header/div/a[1]/span[1]").click()
         sleep(0.25)
+        driver.execute_script('window.scrollTo(0, 450)')
+        sleep(0.5)
         driver.find_element(By.XPATH,
                             '/html/body/div[2]/div/div[2]/div/main/div/section/div/div[2]/div[1]/div/button/span[1]').click()
         sleep(5)
@@ -80,6 +82,8 @@ def second_event():
                             "/html/body/div[2]/div/div[2]/div/main/div/div/div/div/div[1]/div/form/button/span[1]").click()
         driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div[1]/header/div/a[1]/span[1]").click()
         sleep(0.25)
+        driver.execute_script('window.scrollTo(0, 450)')
+        sleep(0.5)
         driver.find_element(By.XPATH,
                             '/html/body/div[2]/div/div[2]/div/main/div/section/div/div[2]/div[2]/div/button/span[1]').click()
         sleep(5)
